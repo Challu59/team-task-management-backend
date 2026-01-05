@@ -1,7 +1,7 @@
 from rest_framework.routers import DefaultRouter
-from .views import TaskViewSet
+from .views import TeamViewSet
 
 router = DefaultRouter()
-router.register('tasks', TaskViewSet, basename='tasks')
+router.register('teams', TeamViewSet, basename='teams')
 
 urlpatterns = router.urls
